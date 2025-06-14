@@ -1,18 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Management App
+
+A modern task management application built with Next.js featuring a Kanban board interface.
+
+## Features
+
+- 📋 Kanban board with drag-and-drop functionality
+- ✨ Clean and modern UI using Tailwind CSS
+- 🎯 Task prioritization (High, Medium, Low)
+- 🏷️ Task categorization and tagging
+- 👥 Task assignment
+- 📅 Due date tracking
+- 🎨 Column color coding
+- 🔄 Real-time updates
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [@hello-pangea/dnd](https://github.com/hello-pangea/dnd) - Drag and drop functionality
+- [Radix UI](https://www.radix-ui.com/) - Headless UI components
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react) - Icons
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone [your-repo-url]
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd [your-repo-name]
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
