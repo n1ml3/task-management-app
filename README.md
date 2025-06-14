@@ -152,6 +152,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://x.com/NamL96279699)
+Your Name - [@NamL96279699](https://x.com/NamL96279699)
 
-Project Link: [https://github.com/yourusername/task-management-app](https://github.com/n1ml3/task-management-app)
+Project Link: [https://github.com/n1ml3/task-management-app](https://github.com/n1ml3/task-management-app)
