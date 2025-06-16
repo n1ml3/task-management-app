@@ -85,7 +85,7 @@ export default function TaskManagementApp() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 p-6 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <Header columns={columns} onAddTask={handleAddTask} />
         <KanbanBoard
