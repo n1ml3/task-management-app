@@ -151,3 +151,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Your Name - [@NamL96279699](https://x.com/NamL96279699)
 
 Project Link: [https://github.com/n1ml3/task-management-app](https://github.com/n1ml3/task-management-app)
+
+![image](https://github.com/user-attachments/assets/a327633a-db27-4bdd-a916-75676ebb71e0)
