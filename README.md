@@ -50,10 +50,6 @@ A modern and intuitive Kanban-style task management application built with Next.
 - **Authentication**
   - NextAuth.js
 
-- **Database**
-  - PostgreSQL
-  - Prisma ORM
-
 ## 🚀 Getting Started
 
 ### Prerequisites
