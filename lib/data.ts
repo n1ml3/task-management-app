@@ -4,7 +4,7 @@ export const initialData: Column[] = [
   {
     id: "todo",
     title: "To Do",
-    color: "bg-purple-100 border-purple-300",
+    color: "bg-purple-50 border-purple-200 dark:bg-purple-900/20 dark:border-purple-700",
     tasks: [
       {
         id: "1",
@@ -31,7 +31,7 @@ export const initialData: Column[] = [
   {
     id: "doing",
     title: "Doing",
-    color: "bg-blue-100 border-blue-300",
+    color: "bg-blue-50 border-blue-200 dark:bg-blue-900/20 dark:border-blue-700",
     tasks: [
       {
         id: "3",
@@ -48,7 +48,7 @@ export const initialData: Column[] = [
   {
     id: "done",
     title: "Done",
-    color: "bg-green-100 border-green-300",
+    color: "bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-700",
     tasks: [
       {
         id: "4",

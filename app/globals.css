@@ -81,3 +81,18 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-400 dark:bg-gray-500;
 }
+
+/* Kanban Column Colors */
+@layer components {
+  .kanban-todo {
+    @apply bg-purple-50 border-purple-200 dark:bg-purple-900/20 dark:border-purple-700;
+  }
+
+  .kanban-doing {
+    @apply bg-blue-50 border-blue-200 dark:bg-blue-900/20 dark:border-blue-700;
+  }
+
+  .kanban-done {
+    @apply bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-700;
+  }
+}

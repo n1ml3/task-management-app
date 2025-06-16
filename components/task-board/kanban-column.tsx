@@ -12,21 +12,45 @@ interface KanbanColumnProps {
 }
 
 export function KanbanColumn({ column, onEditTask, onDeleteTask }: KanbanColumnProps) {
-  const getColumnColorClasses = (color: string) => {
-    const baseClasses = color.replace("bg-", "").replace("border-", "")
-    return `${color} dark:bg-gray-800 dark:border-gray-600`
+  // Tạo header color riêng cho mỗi cột
+  const getHeaderColor = (columnId: string) => {
+    switch (columnId) {
+      case "todo":
+        return "bg-purple-100 dark:bg-purple-800/30 border-purple-300 dark:border-purple-600"
+      case "doing":
+        return "bg-blue-100 dark:bg-blue-800/30 border-blue-300 dark:border-blue-600"
+      case "done":
+        return "bg-green-100 dark:bg-green-800/30 border-green-300 dark:border-green-600"
+      default:
+        return "bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-600"
+    }
+  }
+
+  // Tạo title color cho mỗi cột
+  const getTitleColor = (columnId: string) => {
+    switch (columnId) {
+      case "todo":
+        return "text-purple-800 dark:text-purple-200"
+      case "doing":
+        return "text-blue-800 dark:text-blue-200"
+      case "done":
+        return "text-green-800 dark:text-green-200"
+      default:
+        return "text-gray-800 dark:text-gray-200"
+    }
   }
 
   return (
     <div className="flex flex-col">
-      <div
-        className={`rounded-lg border-2 ${getColumnColorClasses(column.color)} p-4 mb-4 transition-colors duration-300`}
-      >
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{column.title}</h2>
-          <Badge variant="secondary" className="bg-white/50 dark:bg-gray-700/50 dark:text-gray-200">
-            {column.tasks.length}
-          </Badge>
+      <div className={`rounded-lg border-2 ${column.color} p-4 mb-4 transition-colors duration-300`}>
+        {/* Header với màu đặc trưng */}
+        <div className={`rounded-md p-3 mb-4 ${getHeaderColor(column.id)}`}>
+          <div className="flex items-center justify-between">
+            <h2 className={`text-lg font-semibold ${getTitleColor(column.id)}`}>{column.title}</h2>
+            <Badge variant="secondary" className="bg-white/70 dark:bg-gray-700/70 dark:text-gray-200">
+              {column.tasks.length}
+            </Badge>
+          </div>
         </div>
 
         <Droppable droppableId={column.id}>
